@@ -1,0 +1,2 @@
+# ai_driven_test_automation_with_playwright_cursor_mcp_server
+ai_driven_test_automation_with_playwright_cursor_mcp_server
