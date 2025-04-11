@@ -1,6 +1,6 @@
 # Playwright Testing Framework
 
-This project contains UI and API tests for the Zeigo Network dashboard.
+This project contains UI and API tests for the Zeigo Network Dashboard.
 
 ## Structure
 
