@@ -1,0 +1,24 @@
+Use the Playwright MCP Server to navigate to the website https://www.saucedemo.com. Ensure that the MCP Server is actively handling the browser automation to validate its integration. Do not simulate the tests statically or bypass the MCP Server. All interactions must be routed through MCP.
+
+On the login page, execute the following two scenarios:
+
+Scenario 1: Valid Login
+Scenario 2: Locked Out User
+
+Where to find the credentials for each scenario? It is in the website, scan the page and you will find them. Please also generate the best assertions you can think of to validate them.
+
+✅ After both scenarios are validated:
+
+Close the browser.
+Once the MCP server finished the code gen, use the code generated under temp_codegen and transpile it to Typescript Cypress Framework using the code generated as reference.
+
+
+Once you have the code gen thru the MCP server, and use the code generated.
+
+Generate the best framework structure using Page Object Model, saving data if necessary in fixtures, save the credentials in a a cypress.env.json file
+
+Create a readme.md file to explain how to run the tests, and the structure of the project.
+
+Create a gitignore file to avoid committing the node_modules folder and the cypress.env.json file.
+
+Create a CICD pipeline using Github Actions to run the tests.
