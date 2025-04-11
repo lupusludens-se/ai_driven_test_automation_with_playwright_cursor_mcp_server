@@ -1,0 +1,19 @@
+// playwright.config.js
+const { defineConfig } = require('@playwright/test');
+
+module.exports = defineConfig({
+  testDir: './', // Include all test directories
+  timeout: 30000, // Maximum time one test can run for
+  retries: 1, // Retry failed tests once
+  reporter: 'html', // Generate an HTML report
+  use: {
+    baseURL: process.env.API_BASE_URL, // Using API base URL from environment variables
+    headless: true, // Run tests in headless mode
+    screenshot: 'only-on-failure', // Capture screenshots only on test failure
+    video: 'retain-on-failure', // Record video only on test failure
+    trace: 'on-first-retry', // Record trace on first retry
+    locale: 'en-US', // Set default locale
+    timezone: 'Asia/Kolkata', // Set default timezone
+    viewport: { width: 1128, height: 720 }, // Set default viewport size
+  },
+});
