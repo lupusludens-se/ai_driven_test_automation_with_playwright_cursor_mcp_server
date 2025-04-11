@@ -1,0 +1,13 @@
+{   "servers": {
+    "playwright": {
+        "command": "npx",
+        "args": [
+            "@playwright/mcp@latest"
+        ]
+    },
+    "my-mcp-server-35f3f582": {
+        "type": "sse",
+        "url": "http://localhost:3000/"
+    }
+  }
+}
