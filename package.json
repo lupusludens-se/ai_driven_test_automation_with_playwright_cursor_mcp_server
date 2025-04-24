@@ -3,6 +3,7 @@
     "dotenv": "^16.5.0"
   },
   "devDependencies": {
+    "@playwright/mcp": "^0.0.15",
     "@playwright/test": "^1.51.1"
   }
 }
