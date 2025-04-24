@@ -1,4 +1,6 @@
 @echo off
+cd /d "%~dp0"
+set PATH=%PATH%;%APPDATA%\npm
 set /p BATCH_COUNT="Enter the number of test batches to run: "
 set /p DELAY="Enter the delay (in seconds) between batches: "
 
