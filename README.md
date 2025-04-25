@@ -155,3 +155,57 @@ To run tests in batches with delays:
 - 🎯 Jump to test definitions
 - 📋 Filter tests by status or tags
 - 🎯 Debug tests with breakpoints
+
+## You can use both MCP Servers (`context7` and `playwright`) for different purposes, but they cannot run simultaneously on the same terminal session. Here's how you can use them:
+
+---
+
+### **How to Use Each MCP Server**
+1. **Context7 MCP Server**:
+   - **Purpose**: Provides up-to-date, version-specific documentation and code examples.
+   - **Usage**:
+     - Start the server:
+       ```powershell
+       npx -y @upstash/context7-mcp@latest
+       ```
+     - Use it in your prompts by adding `use context7` to fetch accurate and context-aware responses.
+
+2. **Playwright MCP Server**:
+   - **Purpose**: Enhances Playwright capabilities for UI testing.
+   - **Usage**:
+     - Start the server:
+       ```powershell
+       npx playwright-mcp
+       ```
+     - Use it to interact with Playwright for advanced testing scenarios.
+
+---
+
+### **Can They Run at the Same Time?**
+- **Same Terminal**: No, only one MCP Server can run in a single terminal session because each server takes control of the terminal's input/output.
+- **Different Terminals**: Yes, you can run both servers simultaneously in separate terminal sessions.
+
+---
+
+### **How to Run Both Servers Simultaneously**
+1. Open two terminal windows.
+2. In the first terminal, start the Context7 MCP Server:
+   ```powershell
+   npx -y @upstash/context7-mcp@latest
+   ```
+3. In the second terminal, start the Playwright MCP Server:
+   ```powershell
+   npx playwright-mcp
+   ```
+
+---
+
+### **How to Use Them Together**
+- **Context7**:
+  - Use it to fetch documentation or code examples for libraries and tools.
+  - Example: Add `use context7` to your prompt to get accurate responses.
+
+- **Playwright**:
+  - Use it to execute advanced UI tests or interact with Playwright's MCP features.
+  - Example: Run Playwright tests while the MCP Server is active.
+
