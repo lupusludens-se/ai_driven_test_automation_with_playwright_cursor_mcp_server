@@ -6,7 +6,23 @@
     },
     "playwright": {
       "command": "npx",
-      "args": ["playwright-mcp"]
+      "args": ["-y", "@executeautomation/playwright-mcp-server"]
+    },
+    "github": {
+      "command": "C:\\Users\\SESA751855\\AppData\\Local\\nvm\\v20.17.0\\node.exe",
+      "args": ["C:\\Users\\SESA751855\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-github\\dist\\index.js"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "%GITHUB_PAT%",
+        "NODE_PATH": "C:\\Users\\SESA751855\\AppData\\Roaming\\npm\\node_modules"
+      }
+    },
+    "playwright-lighthouse": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp"]
+    },
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
     }
   }
 }
